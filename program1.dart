@@ -1,9 +1,9 @@
+
 void main(){
-  int x = 10;
-  if(x%2==0){
-    print("$x is an even number");
-  }
-  else{
-    print("$x is an odd number");
-  }
+int ramSize=4;
+if(ramSize<4){
+print("Can't run a project");
+}else{
+print("Can run a flutter project");
+}
 }

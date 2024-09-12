@@ -1,9 +1,9 @@
+
 void main(){
-  int age = 15;
-  if(age>=18){
-    print("you can cast a vote");
-  }
-  else{
-    print("you can't cast a vote");
-  }
+int x=55;
+if(x>=30 && x<=50){
+print("Number in correct range");
+}else{
+print("Invalid Range");
+}
 }

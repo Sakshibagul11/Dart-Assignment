@@ -1,16 +1,15 @@
 
 void main(){
-int x= 1;
-if(x==1){
-print("Please Pay 2000 rupees");
-}
-else if(x==2){
-print("Please pay 3000 rupees");
-}
-else if(x==3){
-print("Please pay 7000 rupees");
-}
-else{
-print("Please pay 2500 rupees");
+double marks=50;
+if(marks>=0 && marks <25){
+print("Grade D");
+}else if(marks >=25 && marks <50){
+print("Grade C");
+}else if(marks >=50 && marks <75){
+print("Grade B");
+}else if(marks>=75 && marks <=100){
+print("Grade A");
+}else{
+print("Invalid marks");
 }
 }

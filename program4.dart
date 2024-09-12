@@ -1,12 +1,9 @@
+
 void main(){
-  int num = 223;
-  if(num>0){
-    print("number is positive");
-  }
-  else if(num==0){
-    print("number is zero");
-  }
-  else{
-    print("number is negative");
-  }
+int x=21;
+if(x>=16 && x%2==0){
+print("Correct Number");
+}else{
+print("Incorrect Number");
+}
 }
