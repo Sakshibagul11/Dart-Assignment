@@ -1,14 +1,25 @@
 import"dart:io";
 void main(){
-print("Enter rows:");
-int rows=int.parse(stdin.readLineSync()!);
-int val=(rows*(rows+1))~/2;
-for(int i=1;i<=rows;i++){
-int val=i;
-for(int j=1;j<=(rows-i+1);j++){
-stdout.write("$val ");
-val++;
+int x=6;
+if (x==0){
+print("Zero");
 }
-print("");
+else if(x==1){
+print("One");
+}
+else if(x==2){
+print("Two");
+}
+else if(x==3){
+print("Three");
+}
+else if(x==4){
+print("Four");
+}
+else if(x==5){
+print("Five");
+}
+else{
+print("Entered number is greater than 5");
 }
 }
