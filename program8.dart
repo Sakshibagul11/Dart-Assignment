@@ -1,13 +1,11 @@
 
 void main(){
-int start=10;
-int end=1;
-int mul=1;
-while(start>=end){
-if(start%2!=0){
-mul=mul*start;
+int number=942111423;
+while(number>0){
+int temp=number%10;
+if(temp%2==0){
+print(temp*temp);
 }
-start--;
+number=number~/10;
 }
-print(mul);
 }

@@ -1,9 +1,15 @@
+import"dart:io";
 
 void main(){
-int i=10; 
-int num=5;
-while(i>0){
-print(i*num);
-i--;
+int number=int.parse(stdin.readLineSync()!); 
+int temp=number;
+while(temp>0){
+print(temp);
+if(number%2==0){
+temp--;
+}
+else{
+temp-=2;
+}
 }
 }

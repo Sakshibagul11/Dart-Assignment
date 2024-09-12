@@ -1,13 +1,11 @@
 
 void main(){
-int numDays=7;
-while(numDays>=0){
-if(numDays==0){
-print(" 0 days  Assignment is overdue");
+int num=123;
+int revNum=0;
+while(num>0){
+int temp=num%10;
+revNum=revNum*10+temp;
+num=num~/10;
 }
-else{         
-print("$numDays  days remaining");
-}
-numDays--;
-}
+print(revNum);
 }

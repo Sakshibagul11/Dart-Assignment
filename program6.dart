@@ -1,13 +1,10 @@
-import"dart:io";
 
 void main(){
-int start=20;           
-int end=10;            
-while(start>=end){
-if(start%2!=0){
-stdout.write(start*start);
-stdout.write(" ");
+int number=942111423; 
+int count=0;
+while(number!=0){
+count++;
+number=number~/10;
 }
-start--;
-}
+print(count);
 }

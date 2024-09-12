@@ -1,12 +1,15 @@
+import"dart:io";
 
-void main() {
-int start=1;
-int end=10;
-while(start<=end){
-if(start==5){
-start++;
-continue;
+void main(){
+int num=int.parse(stdin.readLineSync()!);   
+int temp=num;
+int revnum=0;
+while(temp>0){
+int val=temp%10;
+revnum=revnum*10+val;
+temp=temp~/10;
 }
-print(start);
+if(revnum==num){
+print("$num is palindrome number");
 }
 }

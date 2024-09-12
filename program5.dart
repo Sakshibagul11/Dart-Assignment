@@ -1,13 +1,12 @@
 import"dart:io";
 
 void main(){
-int start=40;
-int end=50;
-while(start<=end){
-if(start%2==0){
-stdout.write(start*start);
-stdout.write(" ");
+int number=int.parse(stdin.readLineSync()!);   
+int i=number;     
+int fact=1;   
+while(i!=0){
+fact=fact*i;
+i--;               
 }
-start++;     
-}
+print("factorial $number is fact");         
 }
