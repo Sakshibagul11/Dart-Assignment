@@ -1,15 +1,17 @@
 import"dart:io";
+
 void main(){
-print("Enter rows:");
-int rows=int.parse(stdin.readLineSync()!);
-int val=0;
-for(int i=1;i<=rows;i++){
-int temp=val+i;
-val=temp;
-for(int j=1;j<=i;j++){
-stdout.write("$temp ");
-temp++;
+int x=15;
+if(x%3==0 && x%5==0){
+print("Divisible by both");
 }
-print("");
+else if(x%3==0){
+print("Divisible by 3");
+}
+else if(x%5==0){
+print("Divisible by 5");
+}
+else{
+print("Not Divisible by 3 or 5");
 }
 }
