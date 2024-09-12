@@ -1,11 +1,13 @@
-
-void main() {
-int start = 20;
-int end = 30;
-while (start <= end) {
-if (start % 7 == 0) {
-print(start);
+import "dart:io";
+void main(){
+print("Enter Number of rows:");
+int rows=int.parse(stdin.readLineSync()!);
+int number=1;
+for(int i=0;i<rows;i++){
+for(int j=0;j<rows;j++){
+stdout.write("$number ");
 }
-start++;
+print("");
+number++;
 }
 }

@@ -1,12 +1,13 @@
-import"dart:io";
-
+import "dart:io";
 void main(){
-int number=int.parse(stdin.readLineSync()!);   
-int i=number;     
-int fact=1;   
-while(i!=0){
-fact=fact*i;
-i--;               
+print("Enter Number of rows:");
+int rows=int.parse(stdin.readLineSync()!);
+int number=rows;
+for(int i=0;i<rows;i++){
+for(int j=0;j<rows;j++){
+stdout.write("$number ");
 }
-print("factorial $number is fact");         
+print("");
+number--;
+}
 }
