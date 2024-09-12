@@ -1,16 +1,8 @@
 
 void main(){
-int x=15;
-if(x%3==0 && x%5==0){
-print("Divisible by both");
+int sum=0; 
+for(int i=0;i<=10;i++){ 
+sum+=i; 
 }
-else if(x%3==0){
-print("Divisible by 3");
-}
-else if(x%5==0){
-print("Divisible by 5");
-}
-else{
-print("Not Divisible by 3 or 5");
-}
+print(sum); 
 }
