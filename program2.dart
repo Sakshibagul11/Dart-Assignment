@@ -1,13 +1,12 @@
-import"dart:io";
 void main(){
-print("Enter rows:");
-int rows=int.parse(stdin.readLineSync()!);
-int val=1;
-for(int i=1;i<=rows;i++){
-for(int j=1;j<=i;j++){
-stdout.write("$val ");
-val++;
-}
-print("");
-}
+  int x = 5;
+  if(x>0){
+    print("$x is greater than 10");
+  }
+  else  if(x==10){
+    print("$x is equal to 10");
+  }
+  else{
+    print("$x is less than 10");
+  }
 }

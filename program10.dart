@@ -1,19 +1,24 @@
-import"dart:io";
+
 void main(){
-print("Enter rows:");
-int rows=int.parse(stdin.readLineSync()!);
-int val=1;
-for(int i=1;i<=rows;i++){
-int temp=rows-i+1;
-for(int j=1;j<=i;j++){
-if(j%2==0){
-stdout.write("$val\t");
-val++;
-}else{
-stdout.write("$temp\t");
-temp++;
+int units=90;
+int totalCost=0;
+if(units<0){
+print("Enter valid units");
 }
+else if(units>=0 && units<=90){
+print("No cost");
 }
-print("");
+else if(units>90 && units<=180){
+totalCost=6*units;
+print(totalCost);
+
+}
+else if(units>180 && units<=250){
+totalCost=10*units;
+print(totalCost);
+}
+else{
+totalCost=15*units;
+print(totalCost);
 }
 }
