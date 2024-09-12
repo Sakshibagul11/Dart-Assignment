@@ -1,8 +1,11 @@
 
 void main(){
-int sum=0; 
-for(int i=0;i<=10;i++){ 
-sum+=i; 
+int number=942111423;
+while(number>0){
+int temp=number%10;
+if(temp%2==0){
+print(temp*temp);
 }
-print(sum); 
+number=number~/10;
+}
 }

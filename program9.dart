@@ -1,6 +1,11 @@
 
 void main(){
-for(int i=10;i>0;i--){ 
-print(i*12); 
+int num=123;
+int revNum=0;
+while(num>0){
+int temp=num%10;
+revNum=revNum*10+temp;
+num=num~/10;
 }
+print(revNum);
 }

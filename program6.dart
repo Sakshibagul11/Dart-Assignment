@@ -1,6 +1,10 @@
 
 void main(){
-for(int i=100;i>0;i--){ 
-print(i);
+int number=942111423; 
+int count=0;
+while(number!=0){
+count++;
+number=number~/10;
 }
+print(count);
 }

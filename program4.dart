@@ -1,6 +1,11 @@
 
-void main(){
-for(int i=1;i<=100;i++){ 
-print(i);
+void main() {
+int start = 20;
+int end = 30;
+while (start <= end) {
+if (start % 7 == 0) {
+print(start);
+}
+start++;
 }
 }
