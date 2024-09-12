@@ -8,6 +8,5 @@ start++;
 continue;
 }
 print(start);
-start++;
 }
 }
