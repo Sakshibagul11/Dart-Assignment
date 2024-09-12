@@ -1,11 +1,15 @@
-
+import"dart:io";
 void main(){
-int number=942111423;
-while(number>0){
-int temp=number%10;
-if(temp%2==0){
-print(temp*temp);
+print("Enter rows:");
+int rows=int.parse(stdin.readLineSync()!);
+int val=0;
+for(int i=1;i<=rows;i++){
+int temp=val+i;
+val=temp;
+for(int j=1;j<=i;j++){
+stdout.write("$temp ");
+temp++;
 }
-number=number~/10;
+print("");
 }
 }

@@ -1,11 +1,18 @@
-
+import"dart:io";
 void main(){
-int num=123;
-int revNum=0;
-while(num>0){
-int temp=num%10;
-revNum=revNum*10+temp;
-num=num~/10;
+print("Enter rows:");
+int rows=int.parse(stdin.readLineSync()!);
+for(int i=1;i<=rows;i++){
+int val=i;
+for(int j=1;j<=i;j++){
+if(j%2==0){
+stdout.write("${val*val} ");
 }
-print(revNum);
+else{
+stdout.write("${val*val*val} ");
+}
+val++;
+}
+print("");
+}
 }

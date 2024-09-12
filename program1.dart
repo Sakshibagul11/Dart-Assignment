@@ -1,17 +1,11 @@
-
+import"dart:io";
 void main(){
-int evenSum=0;
-int oddMul=1;
-int i=1;
-while(i<=10){
-if(i%2==0){
-evenSum+=i;
+print("Enter rows:");
+int rows=int.parse(stdin.readLineSync()!);
+for(int i=1;i<=rows;i++){
+for(int j=1;j<=i;j++){
+stdout.write("C2W ");
 }
-else{
-oddMul*=i;
+print("");
 }
-i++;
-}
-print("sum of even numbers between 1 to 10 is = $evenSum");
-print("Multiplication of odd numbers between 1 to 10 = $oddMul");
 }

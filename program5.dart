@@ -1,12 +1,26 @@
 import"dart:io";
-
 void main(){
-int number=int.parse(stdin.readLineSync()!);   
-int i=number;     
-int fact=1;   
-while(i!=0){
-fact=fact*i;
-i--;               
+print("Enter rows:");
+int rows=int.parse(stdin.readLineSync()!);
+int val=1;
+for(int i=1;i<=rows;i++){
+int val=i;
+for(int j=1;j<=i;j++){
+if(i%2==0){
+if(j%2==0){
+stdout.write("${val*val}  ");
+}else{
+stdout.write("${val*val*val}  ");
 }
-print("factorial $number is fact");         
+}else{
+if(j%2==0){
+stdout.write("${val*val*val}  ");
+}else{
+stdout.write("${val*val}  ");
+}
+}
+val++;
+}
+print("");
+}
 }

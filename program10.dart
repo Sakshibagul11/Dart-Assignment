@@ -1,15 +1,19 @@
 import"dart:io";
-
 void main(){
-int num=int.parse(stdin.readLineSync()!);   
-int temp=num;
-int revnum=0;
-while(temp>0){
-int val=temp%10;
-revnum=revnum*10+val;
-temp=temp~/10;
+print("Enter rows:");
+int rows=int.parse(stdin.readLineSync()!);
+int val=1;
+for(int i=1;i<=rows;i++){
+int temp=rows-i+1;
+for(int j=1;j<=i;j++){
+if(j%2==0){
+stdout.write("$val\t");
+val++;
+}else{
+stdout.write("$temp\t");
+temp++;
 }
-if(revnum==num){
-print("$num is palindrome number");
+}
+print("");
 }
 }

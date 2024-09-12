@@ -1,14 +1,13 @@
-
-void main() {
-int numDays = 7;
-while (numDays >= 0) {
-if (numDays == 0) {
-print(" 0 days  Assignment is overdue");
-} else if (numDays == 1) {
-print("$numDays  day remaining");
-} else {
-print("$numDays  days remaining");
+import"dart:io";
+void main(){
+print("Enter rows:");
+int rows=int.parse(stdin.readLineSync()!);
+int val=(rows*(rows+1))~/2;
+for(int i=1;i<=rows;i++){
+for(int j=1;j<=i;j++){
+stdout.write("$val\t");
+val--;
 }
-numDays--;
+print("");
 }
 }
