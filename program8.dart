@@ -1,8 +1,13 @@
 
 void main(){
-int sum=0; 
-for(int i=0;i<=10;i++){ 
-sum+=i; 
+int start=10;
+int end=1;
+int mul=1;
+while(start>=end){
+if(start%2!=0){
+mul=mul*start;
 }
-print(sum); 
+start--;
+}
+print(mul);
 }

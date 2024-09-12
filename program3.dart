@@ -1,6 +1,8 @@
 
 void main(){
-for(int i=100 ;i<110;i++){ 
-print(i);
+int number=9;
+while(number>=0){
+print(number);
+number--;      
 }
 }

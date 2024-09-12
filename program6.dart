@@ -1,6 +1,13 @@
+import"dart:io";
 
 void main(){
-for(int i=100;i>0;i--){ 
-print(i);
+int start=20;           
+int end=10;            
+while(start>=end){
+if(start%2!=0){
+stdout.write(start*start);
+stdout.write(" ");
+}
+start--;
 }
 }

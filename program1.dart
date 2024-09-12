@@ -1,6 +1,9 @@
 
 void main(){
-for(int i=0;i<10;i++){ 
-print(i); 
+int i=1;
+int num=4;
+while(i<=10){
+print(i*num);
+i++;          
 }
 }

@@ -1,9 +1,13 @@
 
-void main(){
-int mul=1; 
-for(int i=1;i<=10;i++){ 
-mul*=i; 
-
+void main() {
+int start=1;
+int end=10;
+while(start<=end){
+if(start==5){
+start++;
+continue;
 }
-print(mul); 
+print(start);
+start++;
+}
 }
