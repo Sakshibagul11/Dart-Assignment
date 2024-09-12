@@ -1,9 +1,6 @@
 
 void main(){
-int ramSize=4;
-if(ramSize<4){
-print("Can't run a project");
-}else{
-print("Can run a flutter project");
+for(int i=0;i<10;i++){ 
+print(i); 
 }
 }

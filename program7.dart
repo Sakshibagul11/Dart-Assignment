@@ -1,9 +1,6 @@
 
 void main(){
-int noOfPersons=8;
-if(noOfPersons<8){
-print("You can enter the lift");
-}else{
-print("You can't enter the lift");
+for(int i=1;i<=10;i++){ 
+print(i*12); 
 }
 }

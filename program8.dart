@@ -1,9 +1,8 @@
 
 void main(){
-String vehicle="Bike";
-if(vehicle=="Bike"){
-print("Go to Parking 2");
-}else{
-print("Go to Parking 1");
+int sum=0; 
+for(int i=0;i<=10;i++){ 
+sum+=i; 
 }
+print(sum); 
 }
