@@ -1,23 +1,13 @@
-import "dart:io";
+import"dart:io";
 void main(){
-print("Enter number of rows:");
+print("Enter rows:");
 int rows=int.parse(stdin.readLineSync()!);
-int num1=0;
-int num2=1;
-for(int i=0;i<rows;i++){
-if(i%2==0){
-num1=0;
-num2=1;
-}else{
-num1=1;
-num2=0;
-}
-for(int j=0;j<rows;j++){
-if(j%2==0){
-stdout.write("$num1 ");
-}
-else{
-stdout.write("$num2 ");
+int val=(rows*(rows+1))~/2;
+for(int i=1;i<=rows;i++){
+for(int j=1;j<=i;j++){
+stdout.write("$val  ");
+if(j!=i){
+val--;
 }
 }
 print("");
