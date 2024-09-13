@@ -1,11 +1,9 @@
-import"dart:io";
+
 void main(){
-String ch="N";
-if(ch=="A" || ch=="E" || ch=="I" || ch=="O" || ch=="U" ||
-ch=="a" || ch=="e" || ch=="i" || ch=="o" || ch=="u"){
-print("Vowel");
-}
-else{
-print("Consonant");
+int x=15;
+if(x%3==2){
+print("Remainder is equal to 2");
+}else{
+print("remainder is less than 2");
 }
 }

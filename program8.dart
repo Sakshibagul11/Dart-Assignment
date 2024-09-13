@@ -1,17 +1,9 @@
-import"dart:io";
 
 void main(){
-int x=15;
-if(x%3==0 && x%5==0){
-print("Divisible by both");
-}
-else if(x%3==0){
-print("Divisible by 3");
-}
-else if(x%5==0){
-print("Divisible by 5");
-}
-else{
-print("Not Divisible by 3 or 5");
+String vehicle="Bike";
+if(vehicle=="Bike"){
+print("Go to Parking 2");
+}else{
+print("Go to Parking 1");
 }
 }
